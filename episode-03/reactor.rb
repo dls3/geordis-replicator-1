@@ -44,10 +44,10 @@ class Reactor
   end
 
   def heat_items_in_core
-    @core.contents.each do |item|
-      item.temperature = 1 if draw_power
+      @core.contents.each do |item|
+        item.temperature += 1 if draw_power # FIXED!
+      end
     end
-  end
 
   def cool_items_in_core
     @core.contents.each do |item|
