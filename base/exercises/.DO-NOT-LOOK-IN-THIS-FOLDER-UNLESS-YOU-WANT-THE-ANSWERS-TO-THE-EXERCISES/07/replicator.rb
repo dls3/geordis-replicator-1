@@ -39,7 +39,7 @@ class Replicator
   end
 
   def mix
-    return if glass_in_tummy
+    return unless glass_in_tummy
 
     if @power && @enterprise.reactor.draw_power(3)
       glass_in_tummy.inside.contents.shuffle!.compact!
