@@ -66,7 +66,7 @@ class Replicator
       end
 
       number_of_adjustments += 1
-
+        
     end
 
     @enterprise.transporter.energize(obj: glass_in_reactor_core, from: @enterprise.reactor.core, to: @tummy)
