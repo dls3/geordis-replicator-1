@@ -8,11 +8,13 @@ class Reactor
     @on = false
     @dilithium_crystals = 0
     stock
+    #puts dilithium_crystals
+    #puts stock
     turn_on
   end
 
   def stock
-    @dilithium_crystals += 10
+    @dilithium_crystals += 100
   end
 
   def draw_power(amount = 1)
