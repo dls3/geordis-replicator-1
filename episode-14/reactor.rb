@@ -36,7 +36,7 @@ class Reactor
   end
 
   def on?
-    !@on
+    @on
   end
 
   def off?
