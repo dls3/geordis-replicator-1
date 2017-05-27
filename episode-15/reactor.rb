@@ -36,7 +36,7 @@ class Reactor
   end
 
   def on?
-    false
+    @on
   end
 
   def off?
@@ -51,7 +51,7 @@ class Reactor
 
   def cool_items_in_core
     @core.contents.each do |item|
-      item.temperature -= 1 if draw_power(222)
+      item.temperature -= 1 if draw_power(2)
     end
   end
 
