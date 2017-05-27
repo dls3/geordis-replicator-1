@@ -16,7 +16,8 @@ class Pantry
   end
 
   def find_ingredient(name)
-    'grease'
+    #'grease'
+    @shelf.contents.find { |item| item.name == name }
   end
 
 end
